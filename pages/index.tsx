@@ -34,7 +34,7 @@ const handleClick = async () => {
 };
 export default IndexPage;
 
-export const GetServerSidePropss: GetServerSideProps<Props> = async () => {
+export const getServerSideProps: GetServerSideProps<Props> = async () => {
     const image = await fetchImage();
     return {
         props: {
