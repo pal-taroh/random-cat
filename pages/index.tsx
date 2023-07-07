@@ -15,7 +15,6 @@ const IndexPage: NextPage<Props> = ({ initialImageUrl }) => {
     //         setLoading(false);
     //     });
     // }, []);
-
 const handleClick = async () => {
     setLoading(true);
     const newImage = await fetchImage();
@@ -35,7 +34,7 @@ const handleClick = async () => {
 };
 export default IndexPage;
 
-export const GetServerSideProps: GetServerSideProps<Props> = async () => {
+export const GetServerSidePropss: GetServerSideProps<Props> = async () => {
     const image = await fetchImage();
     return {
         props: {
